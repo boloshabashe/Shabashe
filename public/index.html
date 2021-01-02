@@ -323,7 +323,7 @@
       <div class="w-full">
         <div class="flex relative">
           <div class=" px-24 py-24 relative z-10 w-full transform transition duration-1000 hover:scale-100 opacity-100 hover:opacity-100 relative block h-0 p-0 overflow-hidden" style="padding-top:56.25%;" >
-          <iframe class="absolute inset-0 top-0 left-0 bottom-0 w-full h-full object-cover object-center" src="https://www.youtube-nocookie.com/embed/videoseries?vq=hd1080&theme=light&loop=1&color=white&rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&controls=1&autoplay=0;list=PLQu8E_Cm71U_llvCWlo0d7D4qqJ4NUPlT" frameborder="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="absolute inset-0 top-0 left-0 bottom-0 w-full h-full object-cover object-center" src="" data-src="//www.youtube-nocookie.com/embed/videoseries?vq=hd1080&theme=light&loop=1&color=white&rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&controls=1&autoplay=0;list=PLQu8E_Cm71U_llvCWlo0d7D4qqJ4NUPlT" frameborder="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="h-40"></div>
           </div>
@@ -398,7 +398,7 @@
 
     <div class="w-full text-center">
     <div class="max-w-sm mx-auto p-1 pr-0 flex items-center justify-center">
-    <iframe width="768" height="998" src="https://zohosecurepay.in/checkout/hp32itpp-ghe59xxrrbkx1/Sadaqah" style="border:none;"></iframe>
+    <iframe width="768" height="998" src="" data-src="//zohosecurepay.in/checkout/hp32itpp-ghe59xxrrbkx1/Sadaqah" style="border:none;"></iframe>
     </div>
 
     <div class="mx-auto w-full text-center">
@@ -717,5 +717,15 @@
             var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
             s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
             </script>  
+
+            <script>
+            function init() {
+            var vidDefer = document.getElementsByTagName('iframe');
+            for (var i=0; i<vidDefer.length; i++) {
+            if(vidDefer[i].getAttribute('data-src')) {
+            vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+            } } }
+            window.onload = init;
+            </script>
 </body>
 </html>
