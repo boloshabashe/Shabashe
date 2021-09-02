@@ -1,27 +1,35 @@
 {
-	"name": "shabashe",
-	"version": "1.0.0",
-	"description": "boloshabashe",
-	"main": "index.html",
-	"scripts": {
-		"tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/tailwind.css",
-		"tw:prod": "cross-env NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/tailwind.css",
-		"tw:watch": "onchange \"tailwind.config.js\" \"src/**/*.css\" -- npm run tw:build",
-		"tw:postcss": "postcss build ./src/css/tailwind.css -o ./public/tailwind.css"
-	},
-	"keywords": [],
-	"author": "shabashe",
-	"license": "ISC",
-	"dependencies": {
-		"cssnano": "^4.1.10",
-		"onchange": "^7.1.0",
-		"postcss-cli": "^8.3.1"
-	},
-	"devDependencies": {
-		"@fullhuman/postcss-purgecss": "^4.0.3",
-		"autoprefixer": "^10.3.1",
-		"cross-env": "^7.0.3",
-		"postcss": "^8.3.6",
-		"tailwindcss": "^2.2.7"
-	}
+  "name": "shabashe",
+  "version": "1.0.0",
+  "description": "boloshabashe",
+  "main": "index.html",
+  "scripts": {
+    "tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/tailwind.css",
+    "tw:prod": "cross-env NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/tailwind.css",
+    "tw:watch": "onchange \"tailwind.config.js\" \"src/**/*.css\" -- npm run tw:build",
+    "tw:postcss": "postcss build ./src/css/tailwind.css -o ./public/tailwind.css"
+  },
+  "keywords": [],
+  "author": "shabashe",
+  "license": "ISC",
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.3.3",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boloshabashe/Shabashe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boloshabashe/Shabashe/issues"
+  },
+  "homepage": "https://github.com/boloshabashe/Shabashe#readme"
 }
